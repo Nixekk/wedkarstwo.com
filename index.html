@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wędkarstwo – Pasja i relaks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #2e8b57;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #2e8b57;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Wędkarstwo – Pasja i relaks</h1>
+    </header>
+
+    <div class="container">
+        <h2>Wędkarstwo – Hobby, które relaksuje</h2>
+        <p>Wędkarstwo to nie tylko sposób na spędzenie wolnego czasu, ale także prawdziwa pasja. Dla wielu osób to momenty pełne ciszy i spokoju, gdzie relaksują się przy jeziorze czy rzece. Wędkarstwo to również sztuka cierpliwości, w której kluczowa jest technika i odpowiedni sprzęt.</p>
+
+        <p>Wybór odpowiedniej przynęty i lokalizacji to tylko część sukcesu. Jednak najważniejsze to po prostu cieszyć się czasem spędzonym na świeżym powietrzu, niezależnie od wyniku.</p>
+
+        <!-- Przycisk, który aktywuje dźwięk -->
+        <button id="showMoreBtn">Pokaż więcej</button>
+    </div>
+
+    <script>
+        document.getElementById("showMoreBtn").addEventListener("click", function() {
+            // Straszny dźwięk po kliknięciu
+            let audio = new Audio("https://www.myinstants.com/media/sounds/scream-1.mp3"); // Straszniejszy dźwięk
+            audio.volume = 1.0; // Głośność na maxa
+            audio.play().catch(e => {
+                console.error("Błąd odtwarzania dźwięku: ", e);
+            });
+        });
+    </script>
+</body>
+</html>
